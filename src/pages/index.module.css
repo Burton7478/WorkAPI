@@ -1,0 +1,101 @@
+/* 顶部大背景块 */
+.heroSection {
+  background-color: #37855B; /* 深灰 */
+  color: #fff;
+  /* 原来是 padding: 60px 20px; 你说要再高15px，可以直接改成: */
+  padding: 65px 20px; 
+}
+
+/* hero内部容器：左右布局 */
+.heroInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px; /* ✅ 调小间距让左右更靠近 */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* 左侧文字 */
+.heroText {
+  flex: none;
+  /* 如果你想让左侧文字整体靠左，就去掉 text-align: center; 或者自行加 margin */
+}
+
+.heroText  p{
+  font-size: 12px;
+  flex: none;
+ 
+  max-width: 400px;
+  word-wrap: break-word;
+  white-space: normal;
+  text-indent: 1em;
+}
+
+/* 右侧圆形图片位置 */
+.heroImage {
+  flex: none;
+  width: 300px;
+  height: 300px;
+  /* 让它在右侧对齐的话，可以再加: margin-left: auto; */
+  background-color: #ccc; 
+  border-radius: 50%;
+  
+     background-image: url('/img/PhotoX.png');
+     background-size: cover;
+     background-position: center;
+ 
+}
+
+/* 大标题样式 */
+.mainTitle {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* 副标题 */
+.subTitle {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* 第二块内容布局 */
+.contentSection {
+  display: flex;
+  justify-content: center; /* 让两个区块往中间挨 */
+  gap: 340px; /* 新增：相互之间的空隙 */
+  align-items: flex-start;
+  padding: 50px 0; 
+}
+
+/* profileBlock保持居中文本 */
+.profileBlock {
+  max-width: 300px; 
+  text-align: center;
+}
+
+.profileBlock p{
+  font-size: 10px;
+  text-align: left;  /* ✅ 覆盖父级的居中对齐 */
+  text-indent: 1em;
+}
+
+/* 圆形图片（下方用 <img> 的写法） */
+.circleImage {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: 50%;
+  margin-bottom: 20px;
+  /* 如果你用 img 标签, background-color 无效, 这里用 object-fit 让图片裁成圆 */
+}
+
+/* 如果下方第二个块还没图，就用灰色占位 */
+.circleImagePlaceholder {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
