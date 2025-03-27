@@ -13,7 +13,7 @@ const config = {
   organizationName: 'your-github-org', // 你的 GitHub 组织或用户名
   projectName: 'your-repo-name', // 你的 GitHub 仓库名称
 
-  onBrokenLinks: 'warn',// 'throw',
+  onBrokenLinks: 'throw',// 'throw',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
