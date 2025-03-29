@@ -52,7 +52,7 @@ const config = {
           label: 'Tutorial',
         },
         {
-          href: 'https://github.com/your-github-org/your-repo-name', // 这里换成你的GitHub地址
+          href: 'https://new-web-site-yu.vercel.app/', // 这里换成你的GitHub地址
           label: 'MyPage',
           position: 'right',
         },

@@ -71,7 +71,7 @@
 
 /* profileBlock保持居中文本 */
 .profileBlock {
-  max-width: 300px; 
+  max-width: 400px; 
   text-align: center;
 }
 
@@ -83,8 +83,8 @@
 
 /* 圆形图片（下方用 <img> 的写法） */
 .circleImage {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   object-fit: cover; 
   border-radius: 50%;
   margin-bottom: 20px;
